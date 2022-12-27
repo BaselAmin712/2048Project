@@ -1,0 +1,15 @@
+.logOut-button {
+  position: absolute;
+  right: 4%;
+  top: 50px;
+  padding: 2rem;
+  flex-basis: 20rem;
+  flex-grow: 1;
+  font-size: large;
+  border-color: black;
+  border-style: solid;
+  border-radius: 10px;
+  border-width: small;
+  padding: 10px;
+  background-color: rgba(199, 177, 66, 0.635);
+}

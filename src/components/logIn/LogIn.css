@@ -1,0 +1,74 @@
+html {
+  --border: hsl(200, 10%, 30%);
+  --text: hsl(200, 10%, 25%);
+  --bg: hsl(200, 10%, 98%);
+}
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(199, 177, 66, 0.635);
+  min-width: 250px;
+  padding: 1rem 0;
+  border-radius: 6px;
+}
+.loginTitle {
+  font-size: 1.375rem;
+
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+button,
+input {
+  display: block;
+  border: 1px solid var(--border);
+  font: inherit;
+  background: none;
+  color: inherit;
+}
+.relative {
+  position: relative;
+}
+.iconEyes {
+  position: absolute;
+  right: 0.25rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  background-color: rgba(95, 85, 48, 0.635);
+  color: var(--bg);
+  cursor: pointer;
+}
+
+input::placeholder {
+  color: inherit;
+  opacity: 1;
+}
+
+.FormBtnLogin {
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,50 @@
+@mixin anim($name, $dur, $iterate) {
+  animation-name: $name;
+  animation-duration: $dur;
+  animation-iteration-count: $iterate;
+}
+
+@keyframes example {
+  0% {
+    text-shadow: 0 0 20px rgb(255, 191, 0);
+  }
+  25% {
+    text-shadow: 2px 2px 2px rgb(255, 191, 0);
+    transform: translate(-2px, 1px);
+  }
+  40% {
+    text-shadow: none;
+    transform: translate(0, 0);
+  }
+  50% {
+    text-shadow: 5px 5px 2px blue, -5px -5px 2px rgb(63, 61, 61);
+    transform: translate(0px, 5px);
+  }
+  70% {
+    text-shadow: none;
+    transform: translate(0, 0);
+  }
+  80% {
+    text-shadow: 0 0 20px rgb(255, 191, 0);
+    transform: translate(-2px, 1px);
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+
+.winMessage {
+  color: rgb(14, 160, 14);
+  font-family: "VT323";
+  font-size: 4em;
+  text-align: center;
+  zoom: 80%;
+  @include anim(example, 4s, infinite);
+}
+.loseMessage {
+  color: red;
+  font-family: "VT323";
+  font-size: 4em;
+  text-align: center;
+  @include anim(example, 4s, infinite);
+}

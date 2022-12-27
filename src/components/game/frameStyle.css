@@ -1,0 +1,35 @@
+.gameFrame {
+  width: 500px;
+  height: 500px;
+  border: solid 5px #c97777;
+  /* margin-top: 50px;
+  margin-left: 30%; */
+  margin: 0 auto;
+  padding: 25px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  background-color: #d9d9d9;
+}
+.cell {
+  width: 115px;
+  height: 115px;
+  border: solid 5px #c97777;
+  background-color: #f7ecde;
+}
+.cellNumber {
+  top: 35%;
+  position: relative;
+  font-size: 260%;
+  font-weight: bolder;
+  font-family: Arial, Helvetica, sans-serif;
+  color: brown;
+  justify-content: center;
+  display: flex;
+}
+
+.hide {
+  opacity: 0.5;
+}
+.container {
+  position: relative;
+}
